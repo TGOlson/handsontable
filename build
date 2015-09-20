@@ -1,3 +1,2 @@
 cp ./lib/**/*.js node_modules
-cp -r ../browserify-es6-builder node_modules
-./node_modules/browserify-es6-builder/node_modules/.bin/gulp build
+./node_modules/.bin/browserify-es6-builder ./src/browser --dir=dist --file=handsontable-browser-bundle.js
