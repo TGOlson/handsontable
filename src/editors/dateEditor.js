@@ -24,14 +24,14 @@ class DateEditor extends TextEditor {
    * @param {Core} hotInstance Handsontable instance
    */
   constructor(hotInstance) {
+    super(hotInstance);
+
     this.$datePicker = null;
     this.datePicker = null;
     this.datePickerStyle = null;
     this.defaultDateFormat = 'DD/MM/YYYY';
     this.isCellEdited = false;
     this.parentDestroyed = false;
-
-    super(hotInstance);
   }
 
   init() {

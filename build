@@ -1,0 +1,3 @@
+cp ./lib/**/*.js node_modules
+cp -r ../browserify-es6-builder node_modules
+./node_modules/browserify-es6-builder/node_modules/.bin/gulp build
